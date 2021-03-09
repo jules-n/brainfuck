@@ -19,14 +19,6 @@ public class Input {
         return instructions.charAt(indexPointer++);
     }
 
-    public char prev(){
-        return instructions.charAt(indexPointer--);
-    }
-
-    public String getInstructions() {
-        return instructions;
-    }
-
     public int getIndexPointer() {
         return indexPointer;
     }
