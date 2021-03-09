@@ -4,14 +4,15 @@ import data.Input;
 import data.Memory;
 import data.Output;
 
-public class Increment extends Command {
+public class ToOutput extends Command {
 
-    public Increment(Input input, Output output, Memory memory) {
+
+    public ToOutput(Input input, Output output, Memory memory) {
         super(input, output, memory);
     }
 
     @Override
     public void execute() {
-        memory.setByDataPointer(memory.getByDataPointer()+1);
+        output.append(memory.getByDataPointer());
     }
 }

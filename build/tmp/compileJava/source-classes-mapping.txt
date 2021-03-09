@@ -1,4 +1,21 @@
-commands/ICommand.java
- commands.ICommand
+commands/Backwards.java
+ commands.Backwards
+commands/Command.java
+ commands.Command
+data/Output.java
+ data.Output
+commands/ToOutput.java
+ commands.ToOutput
+commands/Increment.java
+ commands.Increment
+data/Input.java
+ data.Input
+data/Memory.java
+ data.Memory
+commands/Decrement.java
+ commands.Decrement
+commands/Forwards.java
+ commands.Forwards
 Brainfuck.java
  Brainfuck
+ Brainfuck$1
