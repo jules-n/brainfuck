@@ -1,21 +1,12 @@
 import brainfuck.BrainfuckCompiler;
 
+import java.util.Scanner;
+
 public class Program {
 
     public static void main(String ...args) throws Exception {
-      final String str = "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.+++++++++++++++++" +
-        "++++++++++++.+++++++..+++.-------------------"+
-       "---------------------------------------------" +
-       "---------------.+++++++++++++++++++++++++++++"+
-       "++++++++++++++++++++++++++.++++++++++++++++++" +
-       "++++++.+++.------.--------.------------------" +
-       "---------------------------------------------" +
-                "----.-----------------------.";
-      final String strBr = "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++" +
-              ".>+.+++++++..+++.>++.<<+++++++++++++++.>.+++." +
-              "------.--------.>+.>.";
-        BrainfuckCompiler brainfuckCompiler = new BrainfuckCompiler(strBr);
-
-      System.out.println(brainfuckCompiler.compile());
+        Scanner scanner = new Scanner(System.in);
+        BrainfuckCompiler brainfuckCompiler = new BrainfuckCompiler(scanner.next());
+        System.out.println(brainfuckCompiler.compile());
     }
 }

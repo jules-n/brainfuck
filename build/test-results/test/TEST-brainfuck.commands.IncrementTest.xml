@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="brainfuck.commands.IncrementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-09T16:09:01" hostname="DESKTOP-NIT3KI7" time="0.056">
+  <properties/>
+  <testcase name="executeShouldChangeMemoryByIncrementingValue()" classname="brainfuck.commands.IncrementTest" time="0.056"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

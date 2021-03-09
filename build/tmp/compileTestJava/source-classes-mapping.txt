@@ -1,0 +1,6 @@
+brainfuck/BrainfuckCompilerTest.java
+ brainfuck.BrainfuckCompilerTest
+brainfuck/data/OutputTest.java
+ brainfuck.data.OutputTest
+brainfuck/commands/IncrementTest.java
+ brainfuck.commands.IncrementTest
