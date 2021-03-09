@@ -1,10 +1,10 @@
-package commands;
+package brainfuck.commands;
 
-import data.Input;
-import data.Memory;
-import data.Output;
+import brainfuck.data.Input;
+import brainfuck.data.Memory;
+import brainfuck.data.Output;
 
-public class Decrement extends Command {
+public class Decrement extends Command{
 
 
     public Decrement(Input input, Output output, Memory memory) {
@@ -13,6 +13,7 @@ public class Decrement extends Command {
 
     @Override
     public void execute() {
+        if(memory.getByDataPointer()>0)
         memory.setByDataPointer(memory.getByDataPointer()-1);
     }
 }

@@ -1,8 +1,8 @@
-package data;
+package brainfuck.data;
 
 public class Memory {
 
-    private static int dataPointer;
+    private int dataPointer;
     private int[] memory;
 
     public Memory(int maxLength){

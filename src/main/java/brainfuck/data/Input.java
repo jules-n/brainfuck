@@ -1,12 +1,9 @@
-package data;
+package brainfuck.data;
 
-import lombok.Data;
-
-@Data
 public class Input {
 
-    private static String instructions;
-    private static int indexPointer;
+    private String instructions;
+    private int indexPointer;
 
     public Input(String instructions) {
         this.instructions = instructions;
@@ -30,6 +27,6 @@ public class Input {
     }
 
     public void setIndexPointer(int indexPointer) {
-        Input.indexPointer = indexPointer;
+        this.indexPointer = indexPointer;
     }
 }

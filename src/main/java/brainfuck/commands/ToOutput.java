@@ -1,8 +1,8 @@
-package commands;
+package brainfuck.commands;
 
-import data.Input;
-import data.Memory;
-import data.Output;
+import brainfuck.data.Input;
+import brainfuck.data.Memory;
+import brainfuck.data.Output;
 
 public class ToOutput extends Command {
 

@@ -1,21 +1,23 @@
-commands/Backwards.java
- commands.Backwards
-commands/Command.java
- commands.Command
-data/Output.java
- data.Output
-commands/ToOutput.java
- commands.ToOutput
-commands/Increment.java
- commands.Increment
-data/Input.java
- data.Input
-data/Memory.java
- data.Memory
-commands/Decrement.java
- commands.Decrement
-commands/Forwards.java
- commands.Forwards
-Brainfuck.java
- Brainfuck
- Brainfuck$1
+brainfuck/data/Output.java
+ brainfuck.data.Output
+brainfuck/commands/Increment.java
+ brainfuck.commands.Increment
+brainfuck/commands/ToOutput.java
+ brainfuck.commands.ToOutput
+brainfuck/commands/Command.java
+ brainfuck.commands.Command
+brainfuck/data/Memory.java
+ brainfuck.data.Memory
+brainfuck/commands/Forwards.java
+ brainfuck.commands.Forwards
+brainfuck/data/Input.java
+ brainfuck.data.Input
+brainfuck/commands/Decrement.java
+ brainfuck.commands.Decrement
+brainfuck/commands/Backwards.java
+ brainfuck.commands.Backwards
+Program.java
+ Program
+brainfuck/BrainfuckCompiler.java
+ brainfuck.BrainfuckCompiler
+ brainfuck.BrainfuckCompiler$1
