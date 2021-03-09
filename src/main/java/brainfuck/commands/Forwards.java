@@ -13,6 +13,7 @@ public class Forwards extends Command {
 
     @Override
     public void execute() {
+        pointersOnInstructions.empty();
         memory.setDataPointer(memory.getDataPointer()+1);
     }
 

@@ -22,11 +22,11 @@ public class Memory {
         return memory[dataPointer];
     }
 
-    public void setByDataPointer(int data){
-        memory[dataPointer] = data;
+    public int getByDataPointer(int pointer){
+        return memory[pointer];
     }
 
-    public int[] getMemory() {
-        return memory;
+    public void setByDataPointer(int data){
+        memory[dataPointer] = data;
     }
 }

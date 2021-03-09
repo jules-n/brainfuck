@@ -2,7 +2,7 @@ import brainfuck.BrainfuckCompiler;
 
 public class Program {
 
-    public static void main(String ...args){
+    public static void main(String ...args) throws Exception {
       final String str = "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++.+++++++++++++++++" +
         "++++++++++++.+++++++..+++.-------------------"+
        "---------------------------------------------" +
@@ -11,7 +11,11 @@ public class Program {
        "++++++.+++.------.--------.------------------" +
        "---------------------------------------------" +
                 "----.-----------------------.";
-      BrainfuckCompiler brainfuckCompiler = new BrainfuckCompiler(str);
+      final String strBr = "++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++" +
+              ".>+.+++++++..+++.>++.<<+++++++++++++++.>.+++." +
+              "------.--------.>+.>.";
+        BrainfuckCompiler brainfuckCompiler = new BrainfuckCompiler(strBr);
+
       System.out.println(brainfuckCompiler.compile());
     }
 }

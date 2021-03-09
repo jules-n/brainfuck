@@ -6,14 +6,13 @@ import brainfuck.data.Memory;
 import brainfuck.data.Output;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class BrainfuckCompiler {
 
     private Input input;
     private Output output;
     private Memory memory;
-    private HashMap<Character,Command> commands;
+    private final HashMap<Character,Command> commands;
 
     public BrainfuckCompiler(String instructions){
         input = new Input(instructions);
@@ -26,12 +25,24 @@ public class BrainfuckCompiler {
             put('+', new Increment(input,output,memory));
             put('-', new Decrement(input,output,memory));
             put('.', new ToOutput(input,output,memory));
+            put('[', new OpenCycle(input,output,memory));
+            put(']', new CloseCycle(input,output,memory));
         }};
     }
 
-    public String compile(){
-        while (input.hasNext())
-            commands.get(input.next()).execute();
+
+
+
+    public String compile()  {
+        while (input.hasNext()) {
+
+            try {
+                commands.get(input.next()).execute();
+            } catch (Exception e) {
+                System.err.println("No such command");
+            }
+        }
         return output.getASCIIOutput();
     }
+
 }

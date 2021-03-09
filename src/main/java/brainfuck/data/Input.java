@@ -5,6 +5,7 @@ public class Input {
     private String instructions;
     private int indexPointer;
 
+
     public Input(String instructions) {
         this.instructions = instructions;
         indexPointer = 0;
@@ -18,6 +19,10 @@ public class Input {
         return instructions.charAt(indexPointer++);
     }
 
+    public char prev(){
+        return instructions.charAt(indexPointer--);
+    }
+
     public String getInstructions() {
         return instructions;
     }
@@ -28,5 +33,9 @@ public class Input {
 
     public void setIndexPointer(int indexPointer) {
         this.indexPointer = indexPointer;
+    }
+
+    public int getConcreteInstruction(int index){
+        return instructions.charAt(index);
     }
 }

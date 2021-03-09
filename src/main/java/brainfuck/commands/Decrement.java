@@ -13,7 +13,6 @@ public class Decrement extends Command{
 
     @Override
     public void execute() {
-        if(memory.getByDataPointer()>0)
         memory.setByDataPointer(memory.getByDataPointer()-1);
     }
 }
