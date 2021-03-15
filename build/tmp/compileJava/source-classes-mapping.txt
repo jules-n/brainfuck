@@ -18,6 +18,7 @@ brainfuck/commands/Decrement.java
  brainfuck.commands.Decrement
 brainfuck/commands/Backwards.java
  brainfuck.commands.Backwards
+<<<<<<< HEAD
 brainfuck/commands/ICommand.java
  brainfuck.commands.ICommand
 Program.java
@@ -26,3 +27,12 @@ brainfuck/BrainfuckCompiler.java
  brainfuck.BrainfuckCompiler
  brainfuck.BrainfuckCompiler$1
  brainfuck.BrainfuckCompiler$Analyzer
+=======
+brainfuck/commands/CloseCycle.java
+ brainfuck.commands.CloseCycle
+brainfuck/BrainfuckCompiler.java
+ brainfuck.BrainfuckCompiler
+ brainfuck.BrainfuckCompiler$1
+Program.java
+ Program
+>>>>>>> origin/main

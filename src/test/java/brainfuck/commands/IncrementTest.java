@@ -1,6 +1,5 @@
 package brainfuck.commands;
 
-import brainfuck.BrainfuckCompiler;
 import brainfuck.data.Memory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
