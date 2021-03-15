@@ -53,9 +53,6 @@ public class BrainfuckCompiler {
         }};
     }
 
-
-
-
     public String compile()  {
         while (input.hasNext()) {
             try {
