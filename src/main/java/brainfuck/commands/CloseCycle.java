@@ -4,7 +4,7 @@ import brainfuck.data.Input;
 import brainfuck.data.Memory;
 import brainfuck.data.Output;
 
-public class CloseCycle extends Command{
+public class CloseCycle /*extends Command{
     public CloseCycle(Input input, Output output, Memory memory) {
         super(input, output, memory);
     }
@@ -20,3 +20,4 @@ public class CloseCycle extends Command{
 
     }
 }
+*/{}

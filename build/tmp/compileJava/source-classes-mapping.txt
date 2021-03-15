@@ -2,26 +2,27 @@ brainfuck/data/Input.java
  brainfuck.data.Input
 brainfuck/data/Output.java
  brainfuck.data.Output
-brainfuck/commands/Decrement.java
- brainfuck.commands.Decrement
 brainfuck/data/Memory.java
  brainfuck.data.Memory
 brainfuck/commands/Increment.java
  brainfuck.commands.Increment
-brainfuck/commands/OpenCycle.java
- brainfuck.commands.OpenCycle
 brainfuck/commands/ToOutput.java
  brainfuck.commands.ToOutput
-brainfuck/commands/Command.java
- brainfuck.commands.Command
+brainfuck/commands/Cycle.java
+ brainfuck.commands.Cycle
 brainfuck/commands/Forwards.java
  brainfuck.commands.Forwards
+brainfuck/commands/CloseCycle.java
+ brainfuck.commands.CloseCycle
+brainfuck/commands/Decrement.java
+ brainfuck.commands.Decrement
 brainfuck/commands/Backwards.java
  brainfuck.commands.Backwards
+brainfuck/commands/ICommand.java
+ brainfuck.commands.ICommand
 Program.java
  Program
 brainfuck/BrainfuckCompiler.java
  brainfuck.BrainfuckCompiler
  brainfuck.BrainfuckCompiler$1
-brainfuck/commands/CloseCycle.java
- brainfuck.commands.CloseCycle
+ brainfuck.BrainfuckCompiler$Analyzer

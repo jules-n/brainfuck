@@ -4,15 +4,10 @@ import brainfuck.data.Input;
 import brainfuck.data.Memory;
 import brainfuck.data.Output;
 
-public class Decrement extends Command{
-
-
-    public Decrement(Input input, Output output, Memory memory) {
-        super(input, output, memory);
-    }
+public class Decrement implements ICommand{
 
     @Override
-    public void execute() {
+    public void execute(Output output, Memory memory) {
         memory.setByDataPointer(memory.getByDataPointer()-1);
     }
 }

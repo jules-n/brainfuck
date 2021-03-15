@@ -13,12 +13,12 @@ public class IncrementTest {
     @BeforeEach
     void setUp() {
         memory = new Memory(1);
-        increment = new Increment(null,null, memory);
+        increment = new Increment();
     }
 
     @Test
     void executeShouldChangeMemoryByIncrementingValue() {
-        increment.execute();
-        assertEquals(1,increment.getMemory().getByDataPointer(0));
+        increment.execute(null, memory);
+        assertEquals(1,memory.getByDataPointer(0));
     }
 }
